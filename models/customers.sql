@@ -1,3 +1,7 @@
+-- test1
+-- test2
+-- test3
+-- test4
 with customers as (
     select * from {{ ref('stg_customers') }}
 
