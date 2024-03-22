@@ -1,4 +1,6 @@
-with source as (
+with recursive
+
+source as (
 
     {#-
     Normally we would select from the table here, but we are using seeds to load
@@ -16,6 +18,7 @@ renamed as (
         last_name
 
     from source
+    where id = 1
 
 )
 

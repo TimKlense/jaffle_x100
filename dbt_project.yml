@@ -36,3 +36,9 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+
+vars:
+  my_custom_var: 1
+
+
+# dbt build --select my_second_dbt_model --vars '{ "my_custom_var": 42 }'
